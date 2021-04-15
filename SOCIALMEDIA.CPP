@@ -4,7 +4,6 @@
 
 class connectworld
 {
- //	int i=1,i1=1;
 	char user[20], password[12],scrname[10];
 	public:
 		void registeruser(void);
@@ -29,8 +28,7 @@ void connectworld::registeruser(void)
 void connectworld::postfeed(void)
 {
 	cout<<"Post: Happy learning:)";
-  //	cout<<"\nGive the reactions for postfeed(like/unlike, hide)";
-	cout<<"\n1. like";
+  	cout<<"\n1. like";
 	cout<<"\n2. unlike";
 	cout<<"\n3. hide";
 	cout<<"\nyour reaction:" ;
@@ -59,8 +57,7 @@ void connectworld::followuser()
 	cout<<"\n2.user2";
 	cout<<"\n3.user3";
 	cout<<"\n4.user4";
-  //	cin>>l;
-	for(t=1;t<=5;t++)
+  	for(t=1;t<=5;t++)
 	{
 		cout<<"\nEnter your options(Note enter 0 to leave this page): ";
 		cin>>l;
@@ -286,7 +283,6 @@ void main()
 	clrscr();
 	c.registeruser();
 	c.postfeed();
-//	c.getuserfeeds();
 	c.blockuser();
 	c.deleteuser();
 	getch();
